@@ -107,11 +107,17 @@
 				time: app.getData().duration,
 				status: 'stopped',
 			});
+
+			// Reset document title to default value
+			document.title = documentTitle;
 		}
 
 		// If user selects a time duration
 		if (event.target.hasAttribute('data-time')) {
 			var time = parseInt(event.target.getAttribute('data-time'), 10);
+
+			// Reset document title to default value
+			document.title = documentTitle;
 
 			clearInterval(timer);
 			setTimer(time);
