@@ -11,10 +11,55 @@
  * Layout
  */
 body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-	font-size: 112.5%;
-	margin-left: auto;
-	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 	max-width: 40em;
 	width: 88%;
+	margin: 0 auto;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 100%;
+	background: #7474BF;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #348AC7, #7474BF);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #348AC7, #7474BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	text-align: center;
+	line-height: 1.5;
+}
+
+button {
+	display: inline-block;
+	padding: 0.5em 1em;
+	border: 1px solid transparent;
+	border-radius: 2em;
+	background: rgba(10, 20, 30, .2);
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 1rem;
+	color: #fff;
+	cursor: pointer;
+	line-height: 1.5;
+}
+
+button + button {
+	margin-left: 1em;
+}
+
+button:focus {
+	border: 1px solid rgba(255, 255, 255, 0.6);
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.timer-title {
+	margin-top: 0;
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 400;
+}
+
+.timer-pomodoro {
+	margin: 0.25em 0;
+	color: #fff;
+	font-size: 8rem;
+	font-weight: 400;
 }

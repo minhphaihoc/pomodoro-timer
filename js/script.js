@@ -140,7 +140,7 @@
 					'<button data-time="300">Short Break</button>' +
 					'<button data-time="900">Long Break</button>' +
 				'</div>' +
-				'<h1>' + displayTimer(props.time) + '</h1>' +
+				'<h2 class="timer-pomodoro">' + displayTimer(props.time) + '</h2>' +
 				'<div class="timer-controls">' +
 					'<button data-start-timer>Start</button>' +
 					'<button data-pause-timer>Pause</button>' +
